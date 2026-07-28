@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ===== SEO ===== -->
+  <title>Mahmoud Fawazy | Graphic Designer</title>
+  <meta name="description" content="Mahmoud Fawazy — Print Design Expert with 16+ years of experience in brochures, roll-ups, banners, and all types of print production." />
+  <meta name="keywords" content="Mahmoud Fawazy, Print Design Expert, Print Production, Brochure Design, Roll Up Design, Banner Design, Graphic Designer, Adobe Photoshop, CorelDRAW" />
+  <meta name="author" content="Mahmoud Fawazy" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ===== Open Graph ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mahmoud Fawazy | Graphic Designer" />
+  <meta property="og:description" content="Print Design Expert with 16+ years of experience — brochures, roll-ups, banners, and all types of print production." />
+  <meta property="og:image" content="assets/images/og-image.jpg" />
+  <meta property="og:url" content="https://mohamedfawazy.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mahmoud Fawazy | Graphic Designer" />
+  <meta name="twitter:description" content="Print Design Expert with 16+ years of experience — brochures, roll-ups, banners, and all types of print production." />
+
+  <!-- ===== Favicon ===== -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- ===== Fonts ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- ===== Font Awesome ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ===== Styles ===== -->
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+
+  <!-- ===================================================
+       LOADING SCREEN
+  ==================================================== -->
+  <div id="loading-screen" class="loading-screen" role="status" aria-label="Loading">
+    <div class="loader-content">
+      <div class="loader-logo"><img src="assets/icons/logo.png" alt="Mahmoud Fawazy Logo" class="loader-logo-img" /></div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar"></div>
+      </div>
+      <p class="loader-text" data-i18n="loading">MohamedFawazy Portfolio</p>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       NAVIGATION
+  ==================================================== -->
+  <header id="navbar" class="navbar" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="Go to top">
+        <img src="assets/icons/logo.png" alt="Mahmoud Fawazy Logo" class="logo-img" />
+        <span class="logo-name" data-i18n="logoName">Mahmoud Fawazy</span>
+      </a>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#home"      class="nav-link active" data-i18n="navHome"      aria-current="page">Home</a></li>
+        <li><a href="#about"     class="nav-link"        data-i18n="navAbout">About</a></li>
+        <li><a href="#skills"    class="nav-link"        data-i18n="navSkills">Skills</a></li>
+        <li><a href="#portfolio" class="nav-link"        data-i18n="navPortfolio">Portfolio</a></li>
+        <li><a href="#contact"   class="nav-link"        data-i18n="navContact">Contact</a></li>
+      </ul>
+
+      <!-- Controls -->
+      <div class="nav-controls">
+        <!-- Download CV -->
+        <a href="assets/cv/Mohamed-Fawazy-CV.pdf" download class="btn btn-cv ripple" aria-label="Download CV">
+          <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+          <span data-i18n="downloadCV">CV</span>
+        </a>
+
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
+          <i class="fa-solid fa-sun" id="icon-sun" aria-hidden="true"></i>
+          <i class="fa-solid fa-moon" id="icon-moon" aria-hidden="true"></i>
+        </button>
+
+        <!-- Language Toggle -->
+        <div class="lang-toggle" role="group" aria-label="Language selection">
+          <button class="lang-btn active" data-lang="en" aria-label="Switch to English" aria-pressed="true">EN</button>
+          <span class="lang-divider" aria-hidden="true">|</span>
+          <button class="lang-btn" data-lang="ar" aria-label="Switch to Arabic" aria-pressed="false">AR</button>
+        </div>
+
+        <!-- Hamburger -->
+        <button id="hamburger" class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-links-mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="nav-links-mobile" class="nav-mobile" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#home"      class="nav-link" data-i18n="navHome">Home</a></li>
+        <li><a href="#about"     class="nav-link" data-i18n="navAbout">About</a></li>
+        <li><a href="#skills"    class="nav-link" data-i18n="navSkills">Skills</a></li>
+        <li><a href="#portfolio" class="nav-link" data-i18n="navPortfolio">Portfolio</a></li>
+        <li><a href="#contact"   class="nav-link" data-i18n="navContact">Contact</a></li>
+        <li>
+          <a href="assets/cv/Mohamed-Fawazy-CV.pdf" download class="btn btn-cv ripple" aria-label="Download CV">
+            <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+            <span data-i18n="downloadCV">CV</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================================================
+         HERO SECTION
+    ==================================================== -->
+    <section id="home" class="hero section" aria-label="Hero">
+      <!-- Particle canvas -->
+      <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+      <!-- Decorative animated blobs -->
+      <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="hero-greeting reveal-up" data-i18n="heroGreeting">Hello, I'm</p>
+        <h1 class="hero-name reveal-up">Mahmoud Fawazy</h1>
+        <div class="hero-role-wrap reveal-up">
+          <span class="hero-role-prefix" data-i18n="heroRolePrefix">I'm a</span>
+          <span class="hero-role" id="typed-role"></span>
+          <span class="hero-cursor" aria-hidden="true">|</span>
+        </div>
+        <p class="hero-bio reveal-up" data-i18n="heroBio">
+          Over 16 years of expertise in print design — delivering precision, quality, and creativity across every printed piece. From concept to production, I make print work.
+        </p>
+        <div class="hero-cta reveal-up">
+          <a href="assets/cv/Mohamed-Fawazy-CV.pdf" download class="btn btn-primary ripple">
+            <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+            <span data-i18n="downloadCVFull">Download CV</span>
+          </a>
+          <a href="#contact" class="btn btn-outline ripple">
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            <span data-i18n="contactMe">Contact Me</span>
+          </a>
+        </div>
+        <div class="hero-stats reveal-up" aria-label="Statistics">
+          <div class="stat-item">
+            <span class="stat-number">16+</span>
+            <span class="stat-label" data-i18n="statYears">Years Exp.</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-number">2000+</span>
+            <span class="stat-label" data-i18n="statProjects">Projects</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label" data-i18n="statClients">Clients</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+        <span class="scroll-dot" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ===================================================
+         ABOUT SECTION
+    ==================================================== -->
+    <section id="about" class="about section" aria-label="About">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag" data-i18n="aboutTag">Get to know me</span>
+          <h2 class="section-title" data-i18n="aboutTitle">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Image -->
+          <div class="about-image-wrap reveal-left">
+            <div class="about-image-card glass-card">
+              <div class="about-img-placeholder" aria-label="Mahmoud Fawazy profile photo">
+                <img src="assets/portfolio/my%20face%20photo.jpg" alt="Mahmoud Fawazy — Graphic Designer" loading="lazy" />
+              </div>
+              <!-- Floating badge -->
+              <div class="about-badge glass-card" aria-label="Experience badge">
+                <span class="badge-number">16+</span>
+                <span class="badge-label" data-i18n="badgeYears">Years of<br/>Experience</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div class="about-text reveal-right">
+            <h3 class="about-subtitle" data-i18n="aboutSubtitle">Print Design Expert</h3>
+            <p class="about-description" data-i18n="aboutDesc1">
+              I'm Mahmoud Fawazy, a print design expert with over 16 years of experience. Print is my passion and my craft — from brochures and roll-ups to large-format banners, I bring precision and creativity to every piece that goes to press.
+            </p>
+            <p class="about-description" data-i18n="aboutDesc2">
+              My work covers every stage — from initial concept to press-ready files — ensuring every detail is sharp, every colour is accurate, and every printed piece is something to be proud of.
+            </p>
+
+            <!-- Specializations -->
+            <h4 class="about-spec-title" data-i18n="specTitle">Specialized in:</h4>
+            <ul class="about-spec-list" role="list">
+              <li class="spec-item">
+                <i class="fa-solid fa-palette" aria-hidden="true"></i>
+                <span data-i18n="spec1">Brand Identity</span>
+              </li>
+              <li class="spec-item">
+                <i class="fa-solid fa-print" aria-hidden="true"></i>
+                <span data-i18n="spec2">Print Design</span>
+              </li>
+              <li class="spec-item">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                <span data-i18n="spec3">Social Media Design</span>
+              </li>
+              <li class="spec-item">
+                <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
+                <span data-i18n="spec4">Marketing Designs</span>
+              </li>
+              <li class="spec-item">
+                <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                <span data-i18n="spec5">Large Format &amp; Banners</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         SKILLS SECTION
+    ==================================================== -->
+    <section id="skills" class="skills section" aria-label="Skills">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag" data-i18n="skillsTag">What I Use</span>
+          <h2 class="section-title" data-i18n="skillsTitle">My Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Photoshop -->
+          <article class="skill-card glass-card tilt-card reveal-up" aria-label="Adobe Photoshop skill">
+            <div class="skill-icon-wrap skill-ps" aria-hidden="true">
+              <div class="skill-icon-inner">
+                <span class="skill-abbr">Ps</span>
+              </div>
+            </div>
+            <h3 class="skill-name" data-i18n="skillPS">Adobe Photoshop</h3>
+            <p class="skill-desc" data-i18n="skillPSDesc">Photo editing, digital painting, compositing, and advanced retouching for print and digital media.</p>
+            <div class="skill-glow" aria-hidden="true"></div>
+          </article>
+
+          <!-- Illustrator -->
+          <article class="skill-card glass-card tilt-card reveal-up" style="--delay: 0.1s" aria-label="Adobe Illustrator skill">
+            <div class="skill-icon-wrap skill-ai" aria-hidden="true">
+              <div class="skill-icon-inner">
+                <span class="skill-abbr">Ai</span>
+              </div>
+            </div>
+            <h3 class="skill-name" data-i18n="skillAI">Adobe Illustrator</h3>
+            <p class="skill-desc" data-i18n="skillAIDesc">Vector illustration, logo design, iconography, and scalable graphics for brand identity systems.</p>
+            <div class="skill-glow" aria-hidden="true"></div>
+          </article>
+
+          <!-- CorelDRAW -->
+          <article class="skill-card glass-card tilt-card reveal-up" style="--delay: 0.2s" aria-label="CorelDRAW skill">
+            <div class="skill-icon-wrap skill-cdr" aria-hidden="true">
+              <div class="skill-icon-inner">
+                <span class="skill-abbr">Cdr</span>
+              </div>
+            </div>
+            <h3 class="skill-name" data-i18n="skillCDR">CorelDRAW</h3>
+            <p class="skill-desc" data-i18n="skillCDRDesc">Professional vector design, print production, layout design, and technical illustration for diverse industries.</p>
+            <div class="skill-glow" aria-hidden="true"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         PORTFOLIO SECTION
+    ==================================================== -->
+    <section id="portfolio" class="portfolio section" aria-label="Portfolio">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag" data-i18n="portfolioTag">My Work</span>
+          <h2 class="section-title" data-i18n="portfolioTitle">Portfolio</h2>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="portfolio-filters reveal-up" role="group" aria-label="Portfolio filter">
+          <button class="filter-btn active ripple" data-filter="all" data-i18n="filterAll">All</button>
+          <button class="filter-btn ripple" data-filter="brand" data-i18n="filterBrand">Brand Identity</button>
+          <button class="filter-btn ripple" data-filter="print" data-i18n="filterPrint">Print</button>
+          <button class="filter-btn ripple" data-filter="social" data-i18n="filterSocial">Social Media</button>
+          <button class="filter-btn ripple" data-filter="marketing" data-i18n="filterMarketing">Marketing</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid" id="portfolio-grid">
+
+          <!-- 1: Logo Design -->
+          <article class="portfolio-card reveal-up" data-category="brand" aria-label="Project: Logo Design">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #00D4FF 0%, #0047ff 100%)">
+              <img src="assets/portfolio/logdesign.jpg" alt="Logo Design" loading="lazy" />
+              <div class="portfolio-img-overlay">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj1Title">Logo Design</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- 2: Print Design -->
+          <article class="portfolio-card reveal-up" style="--delay: 0.05s" data-category="print" aria-label="Project: Print Design">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%)">
+              <img src="assets/portfolio/print%20design.jpg" alt="Print Design" loading="lazy" />
+              <div class="portfolio-img-overlay">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catPrint">Print Design</span>
+              <h3 class="portfolio-title" data-i18n="proj2Title">Print Design</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- 3: Social Media Design -->
+          <article class="portfolio-card reveal-up" style="--delay: 0.1s" data-category="social" aria-label="Project: Social Media Design">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #A855F7 0%, #EC4899 100%)">
+              <img src="assets/portfolio/social%20media%20design.jpg" alt="Social Media Design" loading="lazy" />
+              <div class="portfolio-img-overlay">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj3Title">Social Media Design</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- 4: Roll Up Design -->
+          <article class="portfolio-card reveal-up" style="--delay: 0.15s" data-category="marketing" aria-label="Project: Roll Up Design">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #10B981 0%, #06B6D4 100%)">
+              <img src="assets/portfolio/roll%20up%20design.jpg" alt="Roll Up Design" loading="lazy" />
+              <div class="portfolio-img-overlay">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catMarketing">Marketing</span>
+              <h3 class="portfolio-title" data-i18n="proj4Title">Roll Up Design</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- 5: Logo Design II -->
+          <article class="portfolio-card reveal-up" style="--delay: 0.2s" data-category="brand" aria-label="Project: Logo Design II">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%)">
+              <img src="assets/portfolio/logo%20desin%202.jpg" alt="Logo Design II" loading="lazy" />
+              <div class="portfolio-img-overlay">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj5Title">Logo Design II</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- 6: Visual Design -->
+          <article class="portfolio-card reveal-up" style="--delay: 0.25s" data-category="brand" aria-label="Project: Visual Design">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #6366F1 0%, #00D4FF 100%)">
+              <img src="assets/portfolio/viwe%20design.JPG" alt="Visual Design" loading="lazy" />
+              <div class="portfolio-img-overlay">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj6Title">Visual Design</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- 7: Social Media Design II -->
+          <article class="portfolio-card reveal-up" style="--delay: 0.3s" data-category="social" aria-label="Project: Social Media Design II">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #F97316 0%, #EC4899 100%)">
+              <img src="assets/portfolio/social%20media%20design%202.jpg" alt="Social Media Design II" loading="lazy" />
+              <div class="portfolio-img-overlay">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj7Title">Social Media Design II</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- 8: Social Media Design III -->
+          <article class="portfolio-card reveal-up" style="--delay: 0.35s" data-category="social" aria-label="Project: Social Media Design III">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #14B8A6 0%, #6366F1 100%)">
+              <img src="assets/portfolio/social%20media%20design%203.jpg" alt="Social Media Design III" loading="lazy" />
+              <div class="portfolio-img-overlay">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj8Title">Social Media Design III</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- 9: Marketing Design -->
+          <article class="portfolio-card reveal-up" style="--delay: 0.4s" data-category="marketing" aria-label="Project: Marketing Design">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%)">
+              <img src="assets/portfolio/work5.JPG" alt="Marketing Design" loading="lazy" />
+              <div class="portfolio-img-overlay">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catMarketing">Marketing</span>
+              <h3 class="portfolio-title" data-i18n="proj9Title">Marketing Design</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+
+          <!-- 10: Logo Design III -->
+          <article class="portfolio-card reveal-up" style="--delay: 0.05s" data-category="brand" aria-label="Project: Logo Design III">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #00D4FF 0%, #7C3AED 100%)">
+              <img src="assets/portfolio/logo%20design.jpg" alt="Logo Design III" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj10Title">Logo Design III</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- 11: Design Print -->
+          <article class="portfolio-card reveal-up" style="--delay: 0.1s" data-category="print" aria-label="Project: Design Print">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%)">
+              <img src="assets/portfolio/design%20print.jpg" alt="Design Print" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catPrint">Print Design</span>
+              <h3 class="portfolio-title" data-i18n="proj11Title">Design Print</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- 12-18: Backcare Design Series -->
+          <article class="portfolio-card reveal-up" style="--delay: 0.15s" data-category="print" aria-label="Project: Backcare Design I">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #10B981 0%, #06B6D4 100%)">
+              <img src="assets/portfolio/1%20backcare%20design.png" alt="Backcare Design I" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catPrint">Print Design</span>
+              <h3 class="portfolio-title" data-i18n="proj12Title">Backcare Design I</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.2s" data-category="print" aria-label="Project: Backcare Design II">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #6366F1 0%, #00D4FF 100%)">
+              <img src="assets/portfolio/2%20backcare%20design.png" alt="Backcare Design II" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catPrint">Print Design</span>
+              <h3 class="portfolio-title" data-i18n="proj13Title">Backcare Design II</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.25s" data-category="print" aria-label="Project: Backcare Design III">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%)">
+              <img src="assets/portfolio/3%20backcare%20design.png" alt="Backcare Design III" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catPrint">Print Design</span>
+              <h3 class="portfolio-title" data-i18n="proj14Title">Backcare Design III</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.3s" data-category="print" aria-label="Project: Backcare Design IV">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%)">
+              <img src="assets/portfolio/4%20backcare%20design.png" alt="Backcare Design IV" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catPrint">Print Design</span>
+              <h3 class="portfolio-title" data-i18n="proj15Title">Backcare Design IV</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.35s" data-category="print" aria-label="Project: Backcare Design V">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #F97316 0%, #EC4899 100%)">
+              <img src="assets/portfolio/5%20backcare%20design.png" alt="Backcare Design V" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catPrint">Print Design</span>
+              <h3 class="portfolio-title" data-i18n="proj16Title">Backcare Design V</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.4s" data-category="print" aria-label="Project: Backcare Design VI">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #14B8A6 0%, #6366F1 100%)">
+              <img src="assets/portfolio/6%20backcare%20design.png" alt="Backcare Design VI" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catPrint">Print Design</span>
+              <h3 class="portfolio-title" data-i18n="proj17Title">Backcare Design VI</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.05s" data-category="print" aria-label="Project: Backcare Design VII">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #A855F7 0%, #EC4899 100%)">
+              <img src="assets/portfolio/7%20backcare%20design.png" alt="Backcare Design VII" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catPrint">Print Design</span>
+              <h3 class="portfolio-title" data-i18n="proj18Title">Backcare Design VII</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- 19-26: Facade 3D Design Series -->
+          <article class="portfolio-card reveal-up" style="--delay: 0.1s" data-category="brand" aria-label="Project: Facade 3D Design I">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #00D4FF 0%, #0047ff 100%)">
+              <img src="assets/portfolio/1%20facade%20designs%203D.JPG" alt="Facade 3D Design I" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj19Title">Facade 3D Design I</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.15s" data-category="brand" aria-label="Project: Facade 3D Design II">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #10B981 0%, #06B6D4 100%)">
+              <img src="assets/portfolio/2%20facade%20designs%203D.jpg" alt="Facade 3D Design II" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj20Title">Facade 3D Design II</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.2s" data-category="brand" aria-label="Project: Facade 3D Design III">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%)">
+              <img src="assets/portfolio/3%20facade%20designs%203D.jpg" alt="Facade 3D Design III" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj21Title">Facade 3D Design III</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.25s" data-category="brand" aria-label="Project: Facade 3D Design IV">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #6366F1 0%, #00D4FF 100%)">
+              <img src="assets/portfolio/4%20facade%20designs%203D.jpg" alt="Facade 3D Design IV" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj22Title">Facade 3D Design IV</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.3s" data-category="brand" aria-label="Project: Facade 3D Design V">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%)">
+              <img src="assets/portfolio/5%20facade%20designs%203D.jpg" alt="Facade 3D Design V" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj23Title">Facade 3D Design V</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.35s" data-category="brand" aria-label="Project: Facade 3D Design VI">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #F97316 0%, #EC4899 100%)">
+              <img src="assets/portfolio/6%20facade%20designs%203D.jpg" alt="Facade 3D Design VI" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj24Title">Facade 3D Design VI</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.4s" data-category="brand" aria-label="Project: Facade 3D Design VII">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #14B8A6 0%, #6366F1 100%)">
+              <img src="assets/portfolio/7%20facade%20designs%203D.jpg" alt="Facade 3D Design VII" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj25Title">Facade 3D Design VII</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.05s" data-category="brand" aria-label="Project: Facade 3D Design VIII">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #A855F7 0%, #EC4899 100%)">
+              <img src="assets/portfolio/8%20facade%20designs%203D.jpg" alt="Facade 3D Design VIII" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj26Title">Facade 3D Design VIII</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- 27-31: Othaim Design Series -->
+          <article class="portfolio-card reveal-up" style="--delay: 0.1s" data-category="marketing" aria-label="Project: Othaim Design I">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #00D4FF 0%, #0047ff 100%)">
+              <img src="assets/portfolio/1%20othaim%20design.png" alt="Othaim Design I" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catMarketing">Marketing</span>
+              <h3 class="portfolio-title" data-i18n="proj27Title">Othaim Design I</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.15s" data-category="marketing" aria-label="Project: Othaim Design II">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%)">
+              <img src="assets/portfolio/2%20othaim%20design.png" alt="Othaim Design II" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catMarketing">Marketing</span>
+              <h3 class="portfolio-title" data-i18n="proj28Title">Othaim Design II</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.2s" data-category="marketing" aria-label="Project: Othaim Design III">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #10B981 0%, #06B6D4 100%)">
+              <img src="assets/portfolio/3%20othaim%20design.png" alt="Othaim Design III" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catMarketing">Marketing</span>
+              <h3 class="portfolio-title" data-i18n="proj29Title">Othaim Design III</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.25s" data-category="marketing" aria-label="Project: Othaim Design IV">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #6366F1 0%, #00D4FF 100%)">
+              <img src="assets/portfolio/4%20othaim%20design.png" alt="Othaim Design IV" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catMarketing">Marketing</span>
+              <h3 class="portfolio-title" data-i18n="proj30Title">Othaim Design IV</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.3s" data-category="marketing" aria-label="Project: Othaim Design V">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%)">
+              <img src="assets/portfolio/5%20othaim%20design.png" alt="Othaim Design V" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catMarketing">Marketing</span>
+              <h3 class="portfolio-title" data-i18n="proj31Title">Othaim Design V</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- 32-34: STC Design Series -->
+          <article class="portfolio-card reveal-up" style="--delay: 0.35s" data-category="brand" aria-label="Project: STC Design I">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%)">
+              <img src="assets/portfolio/1%20stc%20design.png" alt="STC Design I" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj32Title">STC Design I</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.4s" data-category="brand" aria-label="Project: STC Design II">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #F97316 0%, #EC4899 100%)">
+              <img src="assets/portfolio/2%20stc%20design.png" alt="STC Design II" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj33Title">STC Design II</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.05s" data-category="brand" aria-label="Project: STC Design III">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #14B8A6 0%, #6366F1 100%)">
+              <img src="assets/portfolio/3%20stc%20design.png" alt="STC Design III" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj34Title">STC Design III</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- 35-37: Profile Design Series -->
+          <article class="portfolio-card reveal-up" style="--delay: 0.1s" data-category="brand" aria-label="Project: Profile Design I">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #A855F7 0%, #EC4899 100%)">
+              <img src="assets/portfolio/1%20profile%20design.jpg" alt="Profile Design I" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj35Title">Profile Design I</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.15s" data-category="brand" aria-label="Project: Profile Design II">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #00D4FF 0%, #7C3AED 100%)">
+              <img src="assets/portfolio/2%20profile%20design.jpg" alt="Profile Design II" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj36Title">Profile Design II</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.2s" data-category="brand" aria-label="Project: Profile Design III">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #10B981 0%, #06B6D4 100%)">
+              <img src="assets/portfolio/3%20profile%20design.jpg" alt="Profile Design III" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catBrand">Brand Identity</span>
+              <h3 class="portfolio-title" data-i18n="proj37Title">Profile Design III</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- 38-56: Social Media Series 1-19 -->
+          <article class="portfolio-card reveal-up" style="--delay: 0.25s" data-category="social" aria-label="Project: Social Media 1">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%)">
+              <img src="assets/portfolio/1%20social%20media.jpg" alt="Social Media 1" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj38Title">Social Media 1</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.3s" data-category="social" aria-label="Project: Social Media 2">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #6366F1 0%, #00D4FF 100%)">
+              <img src="assets/portfolio/2%20social%20media.jpg" alt="Social Media 2" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj39Title">Social Media 2</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.35s" data-category="social" aria-label="Project: Social Media 3">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%)">
+              <img src="assets/portfolio/3%20social%20media.jpg" alt="Social Media 3" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj40Title">Social Media 3</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.4s" data-category="social" aria-label="Project: Social Media 4">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #F97316 0%, #EC4899 100%)">
+              <img src="assets/portfolio/4%20social%20media.jpg" alt="Social Media 4" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj41Title">Social Media 4</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.05s" data-category="social" aria-label="Project: Social Media 5">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #14B8A6 0%, #6366F1 100%)">
+              <img src="assets/portfolio/5%20social%20media.jpg" alt="Social Media 5" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj42Title">Social Media 5</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.1s" data-category="social" aria-label="Project: Social Media 6">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #A855F7 0%, #EC4899 100%)">
+              <img src="assets/portfolio/6%20social%20media.jpg" alt="Social Media 6" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj43Title">Social Media 6</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.15s" data-category="social" aria-label="Project: Social Media 7">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #00D4FF 0%, #0047ff 100%)">
+              <img src="assets/portfolio/7%20social%20media.jpg" alt="Social Media 7" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj44Title">Social Media 7</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.2s" data-category="social" aria-label="Project: Social Media 8">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%)">
+              <img src="assets/portfolio/8%20social%20media.jpg" alt="Social Media 8" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj45Title">Social Media 8</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.25s" data-category="social" aria-label="Project: Social Media 9">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #10B981 0%, #06B6D4 100%)">
+              <img src="assets/portfolio/9%20social%20media.jpg" alt="Social Media 9" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj46Title">Social Media 9</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.3s" data-category="social" aria-label="Project: Social Media 10">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #6366F1 0%, #00D4FF 100%)">
+              <img src="assets/portfolio/10%20social%20media.jpg" alt="Social Media 10" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj47Title">Social Media 10</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.35s" data-category="social" aria-label="Project: Social Media 11">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%)">
+              <img src="assets/portfolio/11%20social%20media.jpg" alt="Social Media 11" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj48Title">Social Media 11</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.4s" data-category="social" aria-label="Project: Social Media 12">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #F97316 0%, #EC4899 100%)">
+              <img src="assets/portfolio/12%20social%20media.jpg" alt="Social Media 12" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj49Title">Social Media 12</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.05s" data-category="social" aria-label="Project: Social Media 13">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #14B8A6 0%, #6366F1 100%)">
+              <img src="assets/portfolio/13%20social%20media.jpg" alt="Social Media 13" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj50Title">Social Media 13</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.1s" data-category="social" aria-label="Project: Social Media 14">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #A855F7 0%, #EC4899 100%)">
+              <img src="assets/portfolio/14%20social%20media.jpg" alt="Social Media 14" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj51Title">Social Media 14</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.15s" data-category="social" aria-label="Project: Social Media 15">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #00D4FF 0%, #0047ff 100%)">
+              <img src="assets/portfolio/15%20social%20media.jpg" alt="Social Media 15" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj52Title">Social Media 15</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.2s" data-category="social" aria-label="Project: Social Media 16">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%)">
+              <img src="assets/portfolio/16%20social%20media.jpg" alt="Social Media 16" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj53Title">Social Media 16</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.25s" data-category="social" aria-label="Project: Social Media 17">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #10B981 0%, #06B6D4 100%)">
+              <img src="assets/portfolio/17%20social%20media.jpg" alt="Social Media 17" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj54Title">Social Media 17</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.3s" data-category="social" aria-label="Project: Social Media 18">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #6366F1 0%, #00D4FF 100%)">
+              <img src="assets/portfolio/18%20social%20media.jpg" alt="Social Media 18" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj55Title">Social Media 18</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card reveal-up" style="--delay: 0.35s" data-category="social" aria-label="Project: Social Media 19">
+            <div class="portfolio-img" style="--grad: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%)">
+              <img src="assets/portfolio/social%20media%20%2019.jpg" alt="Social Media 19" loading="lazy" />
+              <div class="portfolio-img-overlay"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-category" data-i18n="catSocial">Social Media</span>
+              <h3 class="portfolio-title" data-i18n="proj56Title">Social Media 19</h3>
+              <a href="#" class="btn-view ripple" data-i18n="viewProject">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+        </div><!-- /portfolio-grid -->
+      </div>
+    </section>
+
+    <!-- ===================================================
+         SOCIAL LINKS SECTION
+    ==================================================== -->
+    <section id="social" class="social-section section" aria-label="Social Links">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag" data-i18n="socialTag">Find me online</span>
+          <h2 class="section-title" data-i18n="socialTitle">Let's Connect</h2>
+        </div>
+
+        <div class="social-grid">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-card glass-card reveal-up" aria-label="LinkedIn profile">
+            <div class="social-icon social-linkedin" aria-hidden="true">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <h3 class="social-name">LinkedIn</h3>
+            <p class="social-handle">@mohamedfawazy</p>
+            <span class="social-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+          <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-card glass-card reveal-up" style="--delay: 0.1s" aria-label="Behance profile">
+            <div class="social-icon social-behance" aria-hidden="true">
+              <i class="fa-brands fa-behance"></i>
+            </div>
+            <h3 class="social-name">Behance</h3>
+            <p class="social-handle">@mohamedfawazy</p>
+            <span class="social-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-card glass-card reveal-up" style="--delay: 0.2s" aria-label="Instagram profile">
+            <div class="social-icon social-instagram" aria-hidden="true">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <h3 class="social-name">Instagram</h3>
+            <p class="social-handle">@mohamedfawazy</p>
+            <span class="social-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         CONTACT SECTION
+    ==================================================== -->
+    <section id="contact" class="contact section" aria-label="Contact">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag" data-i18n="contactTag">Get in touch</span>
+          <h2 class="section-title" data-i18n="contactTitle">Contact Me</h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info reveal-left">
+            <p class="contact-intro" data-i18n="contactIntro">
+              Have a project in mind? I'd love to hear about it. Let's create something amazing together.
+            </p>
+
+            <ul class="contact-list" role="list">
+              <li class="contact-item">
+                <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-detail">
+                  <span class="contact-label" data-i18n="contactEmail">Email</span>
+                  <a href="mailto:hello@mohamedfawazy.com" class="contact-value">hello@mohamedfawazy.com</a>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-detail">
+                  <span class="contact-label" data-i18n="contactPhone">Phone</span>
+                  <a href="tel:+966544856173" class="contact-value">+966 54 485 6173</a>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="contact-icon contact-icon-wa" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="contact-detail">
+                  <span class="contact-label" data-i18n="contactWhatsApp">WhatsApp</span>
+                  <a href="https://wa.me/966544856173" target="_blank" rel="noopener noreferrer" class="contact-value">+966 54 485 6173</a>
+                </div>
+              </li>
+              <li class="contact-item">
+                <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-detail">
+                  <span class="contact-label" data-i18n="contactLocation">Location</span>
+                  <span class="contact-value" data-i18n="contactCity">Riyadh, Saudi Arabia</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Form -->
+          <form id="contact-form" class="contact-form glass-card reveal-right" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="form-name" class="form-label" data-i18n="formName">Full Name</label>
+              <input
+                type="text"
+                id="form-name"
+                name="name"
+                class="form-input"
+                data-i18n-placeholder="formNamePlaceholder"
+                placeholder="Your full name"
+                autocomplete="name"
+                required
+                aria-required="true"
+              />
+              <span class="form-error" id="error-name" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" class="form-label" data-i18n="formEmail">Email Address</label>
+              <input
+                type="email"
+                id="form-email"
+                name="email"
+                class="form-input"
+                data-i18n-placeholder="formEmailPlaceholder"
+                placeholder="your@email.com"
+                autocomplete="email"
+                required
+                aria-required="true"
+              />
+              <span class="form-error" id="error-email" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label" data-i18n="formMessage">Message</label>
+              <textarea
+                id="form-message"
+                name="message"
+                class="form-input form-textarea"
+                data-i18n-placeholder="formMessagePlaceholder"
+                placeholder="Tell me about your project..."
+                rows="5"
+                required
+                aria-required="true"
+              ></textarea>
+              <span class="form-error" id="error-message" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full ripple" id="form-submit">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              <span data-i18n="formSend">Send Message</span>
+            </button>
+
+            <!-- Success message -->
+            <div id="form-success" class="form-success" role="status" aria-live="polite" hidden>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <span data-i18n="formSuccess">Your message was sent successfully!</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================
+       FOOTER
+  ==================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        <span data-i18n="footerCopy">© 2026 Mahmoud Fawazy. All Rights Reserved.</span>
+      </p>
+
+      <div class="footer-social" aria-label="Social links">
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-link">
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+        <a href="https://behance.net" target="_blank" rel="noopener noreferrer" aria-label="Behance" class="footer-social-link">
+          <i class="fa-brands fa-behance" aria-hidden="true"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-link">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <p class="footer-credit">
+        <span data-i18n="footerCredit">Crafted with passion &amp; creativity</span>
+        <i class="fa-solid fa-heart" style="color: var(--accent)" aria-hidden="true"></i>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===================================================
+       LIGHTBOX
+  ==================================================== -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-container">
+
+      <!-- Close -->
+      <button class="lightbox-close ripple" aria-label="Close">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+
+      <!-- Prev / Next arrows -->
+      <button class="lightbox-arrow lightbox-prev ripple" id="lb-prev" aria-label="Previous">
+        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+      </button>
+      <button class="lightbox-arrow lightbox-next ripple" id="lb-next" aria-label="Next">
+        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+      </button>
+
+      <!-- Main image -->
+      <div class="lightbox-img-wrap">
+        <img id="lightbox-img" src="" alt="" class="lightbox-img" />
+      </div>
+
+      <!-- Title + counter -->
+      <div class="lightbox-footer">
+        <div class="lightbox-info">
+          <span id="lightbox-category" class="lightbox-category"></span>
+          <h3 id="lightbox-title" class="lightbox-title"></h3>
+        </div>
+        <span id="lightbox-counter" class="lightbox-counter"></span>
+      </div>
+
+      <!-- Related thumbnails -->
+      <div class="lightbox-thumbs" id="lightbox-thumbs" aria-label="Related designs"></div>
+
+    </div>
+  </div>
+
+  <!-- Back to top -->
+  <button id="back-to-top" class="back-to-top ripple" aria-label="Back to top" title="Back to top" hidden>
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- ===== Script ===== -->
+  <script src="src/script.js" type="module"></script>
+</body>
+</html>
