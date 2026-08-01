@@ -1016,7 +1016,8 @@ const Lightbox = (() => {
   let idx   = 0;   // active index within group
 
   /* ---------- helpers ---------- */
-  function cardData(card) {
+  // Unified slide object: { src, alt, title, category }
+  function slideFromCard(card) {
     return {
       src      : card.querySelector('.portfolio-img img')?.src || '',
       alt      : card.querySelector('.portfolio-img img')?.alt || '',
@@ -1027,13 +1028,12 @@ const Lightbox = (() => {
 
   function buildThumbs() {
     thumbsEl.innerHTML = '';
-    if (group.length <= 1) return;          // hide strip for single items
-    group.forEach((card, i) => {
-      const d   = cardData(card);
+    if (group.length <= 1) return;
+    group.forEach((slide, i) => {
       const th  = document.createElement('button');
       th.className  = 'lightbox-thumb' + (i === idx ? ' active' : '');
-      th.setAttribute('aria-label', d.title);
-      th.innerHTML  = `<img src="${d.src}" alt="${d.alt}" loading="lazy" />`;
+      th.setAttribute('aria-label', slide.title || slide.alt);
+      th.innerHTML  = `<img src="${slide.src}" alt="${slide.alt}" loading="lazy" />`;
       th.addEventListener('click', () => goTo(i));
       thumbsEl.appendChild(th);
     });
@@ -1045,14 +1045,13 @@ const Lightbox = (() => {
   }
 
   function renderSlide(animate = true) {
-    const d = cardData(group[idx]);
-    mainImg.src              = d.src;
-    mainImg.alt              = d.alt;
-    titleEl.textContent      = d.title;
-    categoryEl.textContent   = d.category;
+    const slide = group[idx];
+    mainImg.src              = slide.src;
+    mainImg.alt              = slide.alt;
+    titleEl.textContent      = slide.title;
+    categoryEl.textContent   = slide.category;
     counterEl.textContent    = group.length > 1 ? `${idx + 1} / ${group.length}` : '';
 
-    // Highlight active thumb
     thumbsEl.querySelectorAll('.lightbox-thumb').forEach((th, i) => {
       th.classList.toggle('active', i === idx);
       if (i === idx) th.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
@@ -1078,24 +1077,42 @@ const Lightbox = (() => {
 
   /* ---------- open / close ---------- */
   function open(card) {
-    const category = card.dataset.category;
+    const groupData = card.dataset.group;
 
-    // Build group = all visible cards with same category (or all if no category match)
-    const allCards = [...document.querySelectorAll('.portfolio-card')].filter(
-      c => c.style.display !== 'none'
-    );
-    group = allCards.filter(c => c.dataset.category === category);
-    if (!group.length) group = [card];
-    idx = group.indexOf(card);
-    if (idx < 0) idx = 0;
+    if (groupData) {
+      // Group card: build slides from JSON data-group attribute
+      const category = card.querySelector('.portfolio-category')?.textContent?.trim() || '';
+      const title    = card.querySelector('.portfolio-title')?.textContent?.trim() || '';
+      try {
+        const items = JSON.parse(groupData);
+        group = items.map((item, i) => ({
+          src      : item.src,
+          alt      : item.alt || `${title} ${i + 1}`,
+          title    : `${title} — ${i + 1} / ${items.length}`,
+          category : category,
+        }));
+      } catch (e) {
+        group = [slideFromCard(card)];
+      }
+      idx = 0;
+    } else {
+      // Regular card: group by same visible category
+      const category = card.dataset.category;
+      const allCards = [...document.querySelectorAll('.portfolio-card:not(.portfolio-group)')].filter(
+        c => c.style.display !== 'none'
+      );
+      const sameCategory = allCards.filter(c => c.dataset.category === category);
+      group = (sameCategory.length ? sameCategory : [card]).map(slideFromCard);
+      idx   = sameCategory.indexOf(card);
+      if (idx < 0) idx = 0;
+    }
 
     buildThumbs();
-    renderSlide(false);   // no fade on first open — container animation handles it
+    renderSlide(false);
 
     lightbox.hidden = false;
     document.body.style.overflow = 'hidden';
 
-    // Re-trigger container animation
     const container = lightbox.querySelector('.lightbox-container');
     container.style.animation = 'none';
     void container.offsetWidth;

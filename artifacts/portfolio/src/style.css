@@ -1122,6 +1122,25 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1);
 }
 
+/* Group badge — shows image count in corner */
+.group-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 9px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+  z-index: 2;
+}
+
 .portfolio-info {
   padding: 1rem 1.1rem 1.1rem;
 }
